@@ -1,18 +1,23 @@
 # DIOS - Digital Innovation and Optimization System
 
-A comprehensive enterprise-level platform that integrates multiple specialized applications into a unified ecosystem, focusing on gamification, social interaction, and analytics.
+A comprehensive enterprise-level platform that integrates multiple specialized applications into a unified ecosystem, 
+focusing on gamification, social interaction, and analytics.
 
 ## Core Components
 
 ### ÜPlay
+
 A video-based learning and engagement platform that:
+
 - Delivers educational and training content
 - Features an interactive video player with gamification elements
 - Includes playlist management and progress tracking
 - Provides rewards through "ondas" and "cuerdas" (waves and strings)
 
 ### ÜMarket
+
 A marketplace platform that:
+
 - Connects consumers with providers
 - Manages product/service listings
 - Handles transactions and interactions
@@ -36,8 +41,9 @@ project/
 ## Technology Stack
 
 ### Frontend
+
 - **Framework**: Next.js 14 with App Router
-- **UI Libraries**: 
+- **UI Libraries**:
   - Shadcn UI
   - Radix UI
   - TailwindCSS
@@ -45,8 +51,9 @@ project/
 - **Type Safety**: TypeScript
 
 ### Backend
+
 - **API**: REST + GraphQL
-- **Microservices**: 
+- **Microservices**:
   - NestJS
   - Express
 - **Database**: PostgreSQL
@@ -54,6 +61,7 @@ project/
 - **Message Queue**: RabbitMQ
 
 ### DevOps
+
 - **Containerization**: Docker
 - **CI/CD**: GitHub Actions
 - **Monitoring**: Custom analytics system
@@ -92,18 +100,21 @@ project/
 ## Key Features
 
 ### Gamification System
+
 - Achievement tracking
 - Point system (ondas & cuerdas)
 - Progress monitoring
 - Rewards distribution
 
 ### Social Features
+
 - User profiles
 - Connection management
 - Activity feeds
 - Notifications
 
 ### Analytics
+
 - User behavior tracking
 - Performance metrics
 - Content engagement analytics
@@ -112,6 +123,7 @@ project/
 ## Documentation
 
 Detailed documentation is available in the `/docs` directory:
+
 - Architecture Overview
 - API Documentation
 - Development Guidelines
@@ -121,9 +133,18 @@ Detailed documentation is available in the `/docs` directory:
 ## Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch:
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
 5. Open a Pull Request
 
 ## Security
@@ -139,4 +160,4 @@ This project is proprietary software. All rights reserved.
 
 ## Support
 
-For support, please contact the development team or create an issue in the repository. 
+For support, please contact the development team or create an issue in the repository.
