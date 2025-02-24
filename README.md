@@ -1,37 +1,69 @@
-# SuperApp and Gamifier 2.0
+# DIOS - Digital Innovation and Optimization System
 
-A comprehensive microservices-based application that combines a super app platform with advanced gamification features.
+A comprehensive enterprise-level platform that integrates multiple specialized applications into a unified ecosystem, focusing on gamification, social interaction, and analytics.
 
-## Project Structure
+## Core Components
+
+### ÜPlay
+A video-based learning and engagement platform that:
+- Delivers educational and training content
+- Features an interactive video player with gamification elements
+- Includes playlist management and progress tracking
+- Provides rewards through "ondas" and "cuerdas" (waves and strings)
+
+### ÜMarket
+A marketplace platform that:
+- Connects consumers with providers
+- Manages product/service listings
+- Handles transactions and interactions
+- Integrates with the gamification system
+
+## Technical Architecture
 
 ```
-superapp-gamifier/
+project/
 ├── frontend/
-│   ├── superapp/     # Main application frontend (Next.js)
-│   └── gamifier/     # Gamification dashboard (Vite)
+│   ├── superapp/          # Main application (Next.js 14, App Router)
+│   └── gamifier/          # Gamification dashboard (Vite + React)
 ├── backend/
-│   ├── gamification/ # Gamification service (Express)
-│   ├── social/       # Social features service (NestJS)
-│   └── analytics/    # Analytics service (Express)
-├── shared/           # Shared utilities and types
-├── infrastructure/   # Infrastructure as code
-└── docs/            # Documentation
+│   ├── gamification/      # Gamification microservice
+│   ├── social/           # Social features microservice
+│   └── analytics/        # Analytics and tracking microservice
+├── WF_SuperApp/          # Wireframes and design assets
+└── docs/                # Documentation
 ```
 
-## Prerequisites
+## Technology Stack
 
-- Node.js >= 18.0.0
-- npm >= 10.2.4
-- Docker (for local development)
-- Redis
-- PostgreSQL
+### Frontend
+- **Framework**: Next.js 14 with App Router
+- **UI Libraries**: 
+  - Shadcn UI
+  - Radix UI
+  - TailwindCSS
+- **State Management**: React Context + Hooks
+- **Type Safety**: TypeScript
+
+### Backend
+- **API**: REST + GraphQL
+- **Microservices**: 
+  - NestJS
+  - Express
+- **Database**: PostgreSQL
+- **Caching**: Redis
+- **Message Queue**: RabbitMQ
+
+### DevOps
+- **Containerization**: Docker
+- **CI/CD**: GitHub Actions
+- **Monitoring**: Custom analytics system
 
 ## Getting Started
 
 1. Clone the repository:
    ```bash
-   git clone [repository-url]
-   cd superapp-gamifier
+   git clone https://github.com/kvn3toj/DIOS.git
+   cd DIOS
    ```
 
 2. Install dependencies:
@@ -41,7 +73,7 @@ superapp-gamifier/
 
 3. Set up environment variables:
    ```bash
-   cp .env.example .env.local
+   cp .env.example .env
    ```
 
 4. Start development servers:
@@ -49,40 +81,62 @@ superapp-gamifier/
    npm run dev
    ```
 
-## Architecture
+## Development Commands
 
-This project follows a microservices architecture with:
-
-- Frontend using Next.js (App Router) and Vite
-- Backend services using Express and NestJS
-- Event-driven communication using Redis and RabbitMQ
-- GraphQL federation for API management
-- Enterprise-grade API gateway
-
-## Development
-
-- `npm run dev` - Start development servers
+- `npm run dev` - Start development environment
 - `npm run build` - Build all packages
-- `npm run test` - Run tests
-- `npm run lint` - Lint code
+- `npm run test` - Run test suites
+- `npm run lint` - Run linting
 - `npm run format` - Format code
+
+## Key Features
+
+### Gamification System
+- Achievement tracking
+- Point system (ondas & cuerdas)
+- Progress monitoring
+- Rewards distribution
+
+### Social Features
+- User profiles
+- Connection management
+- Activity feeds
+- Notifications
+
+### Analytics
+- User behavior tracking
+- Performance metrics
+- Content engagement analytics
+- Real-time monitoring
 
 ## Documentation
 
-Detailed documentation can be found in the `/docs` directory:
-
+Detailed documentation is available in the `/docs` directory:
 - Architecture Overview
 - API Documentation
 - Development Guidelines
 - Deployment Guide
+- Security Protocols
 
 ## Contributing
 
-1. Create a feature branch
-2. Make your changes
-3. Run tests and linting
-4. Submit a pull request
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Security
+
+- All sensitive data must be properly encrypted
+- Environment variables must be used for secrets
+- Regular security audits are conducted
+- Follow the security guidelines in `/docs/security`
 
 ## License
 
-[License Type] - See LICENSE file for details 
+This project is proprietary software. All rights reserved.
+
+## Support
+
+For support, please contact the development team or create an issue in the repository. 
