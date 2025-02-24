@@ -1,0 +1,342 @@
+openapi: 3.0.0
+info:
+  title: Gamification Service API
+  description: API documentation for the Gamification microservice
+  version: 1.0.0
+
+servers:
+  - url: /api/v1
+    description: Base API path
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    Achievement:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        description:
+          type: string
+        type:
+          type: string
+          enum: [PROGRESSION, COLLECTION, EVENT, SOCIAL]
+        rarity:
+          type: string
+          enum: [COMMON, RARE, EPIC, LEGENDARY]
+        points:
+          type: integer
+        criteria:
+          type: object
+        isActive:
+          type: boolean
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    Quest:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        description:
+          type: string
+        type:
+          type: string
+          enum: [DAILY, WEEKLY, ACHIEVEMENT, EVENT]
+        difficulty:
+          type: string
+          enum: [EASY, MEDIUM, HARD, EXPERT]
+        experienceReward:
+          type: integer
+        pointsReward:
+          type: integer
+        objectives:
+          type: array
+          items:
+            type: object
+            properties:
+              type:
+                type: string
+              target:
+                type: number
+              order:
+                type: integer
+
+    Notification:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        userId:
+          type: string
+          format: uuid
+        title:
+          type: string
+        message:
+          type: string
+        type:
+          type: string
+          enum: [ACHIEVEMENT, QUEST, LEVEL_UP, REWARD, SYSTEM]
+        priority:
+          type: string
+          enum: [LOW, MEDIUM, HIGH]
+        status:
+          type: string
+          enum: [UNREAD, READ, ARCHIVED]
+
+    Reward:
+      type: object
+      properties:
+        id:
+          type: string
+          format: uuid
+        userId:
+          type: string
+          format: uuid
+        name:
+          type: string
+        type:
+          type: string
+          enum: [POINTS, EXPERIENCE, BADGE, ITEM, CURRENCY]
+        value:
+          type: object
+        status:
+          type: string
+          enum: [AVAILABLE, CLAIMED, EXPIRED]
+
+    AnalyticsEvent:
+      type: object
+      properties:
+        userId:
+          type: string
+          format: uuid
+        type:
+          type: string
+          enum: [USER_ACTION, ACHIEVEMENT, QUEST, REWARD, SYSTEM]
+        category:
+          type: string
+          enum: [ENGAGEMENT, PERFORMANCE, PROGRESSION, MONETIZATION, ERROR]
+        event:
+          type: string
+        data:
+          type: object
+
+paths:
+  /achievements:
+    get:
+      summary: List achievements
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: page
+          in: query
+          schema:
+            type: integer
+            default: 1
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 10
+      responses:
+        '200':
+          description: List of achievements
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Achievement'
+
+    post:
+      summary: Create achievement
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Achievement'
+      responses:
+        '200':
+          description: Achievement created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Achievement'
+
+  /quests:
+    get:
+      summary: List quests
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: page
+          in: query
+          schema:
+            type: integer
+            default: 1
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 10
+      responses:
+        '200':
+          description: List of quests
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Quest'
+
+    post:
+      summary: Create quest
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Quest'
+      responses:
+        '200':
+          description: Quest created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Quest'
+
+  /notifications:
+    get:
+      summary: List notifications
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: userId
+          in: query
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: List of notifications
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Notification'
+
+    post:
+      summary: Create notification
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Notification'
+      responses:
+        '200':
+          description: Notification created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Notification'
+
+  /rewards:
+    get:
+      summary: List rewards
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: userId
+          in: query
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: List of rewards
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Reward'
+
+    post:
+      summary: Create reward
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reward'
+      responses:
+        '200':
+          description: Reward created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Reward'
+
+  /analytics/events:
+    post:
+      summary: Track analytics event
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AnalyticsEvent'
+      responses:
+        '200':
+          description: Event tracked successfully
+
+  /analytics/metrics/summary:
+    get:
+      summary: Get metrics summary
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: start
+          in: query
+          schema:
+            type: string
+            format: date-time
+        - name: end
+          in: query
+          schema:
+            type: string
+            format: date-time
+      responses:
+        '200':
+          description: Metrics summary 

@@ -1,0 +1,78 @@
+{
+  "app": {
+    "name": "SuperApp",
+    "description": "Your Ultimate Gaming and Social Platform"
+  },
+  "navigation": {
+    "home": "Home",
+    "games": "Games",
+    "social": "Social",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "auth": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "create": "Create",
+    "submit": "Submit",
+    "success": "Success",
+    "confirm": "Confirm"
+  },
+  "notifications": {
+    "title": "Notifications",
+    "markAllRead": "Mark all as read",
+    "noNotifications": "No notifications",
+    "newMessage": "New message",
+    "newFollower": "New follower",
+    "gameInvite": "Game invitation"
+  },
+  "errors": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "passwordLength": "Password must be at least 8 characters",
+    "networkError": "Network error. Please try again",
+    "unauthorized": "Unauthorized access",
+    "notFound": "Not found"
+  },
+  "accessibility": {
+    "settings": "Accessibility Settings",
+    "highContrast": "High Contrast Mode",
+    "highContrastEnabled": "High contrast mode is enabled",
+    "highContrastDisabled": "High contrast mode is disabled",
+    "reducedMotion": "Reduced Motion",
+    "systemEnabled": "Enabled by system",
+    "systemDisabled": "Disabled by system",
+    "keyboardShortcuts": "Keyboard Shortcuts",
+    "tabDescription": "Move to next focusable element",
+    "shiftTabDescription": "Move to previous focusable element",
+    "enterDescription": "Activate selected element",
+    "spaceDescription": "Toggle buttons and switches",
+    "skipToMain": "Skip to main content",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "modalOpen": "Open modal",
+    "modalClose": "Close modal",
+    "loading": "Loading, please wait",
+    "errorBoundary": "An error has occurred. Please try refreshing the page",
+    "required": "Required field",
+    "optional": "Optional field",
+    "selected": "Selected",
+    "expanded": "Expanded",
+    "collapsed": "Collapsed",
+    "current": "Current page",
+    "pageOf": "Page {current} of {total}"
+  }
+} 

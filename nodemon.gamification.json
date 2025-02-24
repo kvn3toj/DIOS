@@ -1,0 +1,14 @@
+{
+  "watch": [
+    "backend/gamification/src/**/*.ts",
+    "backend/gamification/src/**/*.json"
+  ],
+  "ignore": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    ".git",
+    "node_modules"
+  ],
+  "exec": "ts-node ./backend/gamification/src/main.ts",
+  "ext": "ts,json"
+} 

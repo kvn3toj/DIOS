@@ -1,0 +1,1055 @@
+# Implementation Guide Prompts
+
+## 1. Core Architecture
+
+### Prompt: Microservices Architecture
+Create a comprehensive microservices architecture for a modern web application with the following requirements:
+- Frontend using Next.js with App Router and Server Components
+- Backend services using Node.js with Express and NestJS
+- Event-driven communication between services
+- GraphQL federation for API management
+- Redis and RabbitMQ for event bus implementation
+- Enterprise-grade API gateway with rate limiting and analytics
+
+Key components to define:
+1. Service boundaries and responsibilities
+2. Communication patterns and protocols
+3. Data consistency and transaction management
+4. Error handling and resilience patterns
+5. Monitoring and observability setup
+
+### Prompt: State Management
+Design a robust state management system that includes:
+- Client-side state management using Zustand
+- Server-side caching with Redis
+- Distributed session management
+- Real-time data synchronization
+- Optimistic updates handling
+- Conflict resolution strategies
+
+## 2. Main Systems
+
+### Prompt: Gamification Engine
+Create a scalable gamification engine with:
+- Rule-based achievement system
+- Real-time progress tracking
+- Flexible reward distribution
+- Quest and challenge management
+- Anti-cheat mechanisms
+- Performance optimization for high concurrency
+
+### Prompt: Event System
+Design a real-time event processing system featuring:
+- WebSocket-based communication
+- Event buffering and batching
+- Retry strategies with backoff
+- Dead letter queue handling
+- Event persistence and replay
+- Monitoring and debugging capabilities
+
+### Prompt: Analytics System
+Develop an analytics system that provides:
+- Real-time and batch processing
+- Custom metric collection
+- Flexible aggregation pipelines
+- Data retention policies
+- Privacy compliance
+- Visualization capabilities
+
+## 3. Support Systems
+
+### Prompt: Development Environment
+Create a development environment setup that includes:
+- Local service configuration
+- Mock data generation
+- Hot reload capabilities
+- Debug tooling
+- Performance profiling
+- Error tracking
+
+### Prompt: Testing Utilities
+Design a comprehensive testing framework with:
+- Unit testing setup
+- Integration testing tools
+- E2E testing capabilities
+- Performance testing
+- Security testing
+- Mock data management
+
+## 4. Development Tools
+
+### Prompt: CLI Tools
+Create development CLI tools for:
+- Component generation
+- API endpoint creation
+- Database management
+- Configuration updates
+- Build optimization
+- Deployment automation
+
+### Prompt: Monitoring Tools
+Design development monitoring tools for:
+- Performance tracking
+- Error logging
+- Resource usage
+- Network activity
+- Database queries
+- Cache effectiveness
+
+## 5. Implementation Plan
+
+### Prompt: Infrastructure Phase
+Detail the infrastructure setup phase including:
+- Environment configuration
+- CI/CD pipeline setup
+- Monitoring implementation
+- Security configuration
+- Network setup
+- Database initialization
+
+### Prompt: Core Systems Phase
+Outline the core systems implementation including:
+- Service development
+- API implementation
+- Database schema design
+- Cache strategy
+- Authentication system
+- Authorization framework
+
+### Prompt: Features Phase
+Plan the feature implementation phase with:
+- User management
+- Content management
+- Social features
+- Analytics implementation
+- Search functionality
+- Notification system
+
+### Prompt: Optimization Phase
+Define the optimization phase including:
+- Performance improvements
+- Security hardening
+- Testing automation
+- Documentation updates
+- Monitoring enhancement
+- Scalability testing
+
+## 6. Monitoring and Metrics
+
+### Prompt: Technical KPIs
+Define technical performance indicators for:
+- Response times
+- System availability
+- Resource utilization
+- Error rates
+- Cache effectiveness
+- API performance
+
+### Prompt: Business KPIs
+Outline business metrics including:
+- User engagement
+- Feature adoption
+- Content creation
+- User retention
+- Revenue metrics
+- Growth indicators
+
+### Prompt: Analytics Implementation
+Design analytics implementation for:
+- Event tracking
+- Metric collection
+- Data processing
+- Report generation
+- Dashboard creation
+- Alert configuration
+
+## 7. Documentation
+
+### Prompt: Technical Documentation
+Create technical documentation covering:
+- Architecture overview
+- API references
+- Component documentation
+- Database schemas
+- Security protocols
+- Deployment procedures
+
+### Prompt: User Documentation
+Develop user documentation including:
+- Getting started guides
+- Feature documentation
+- Troubleshooting guides
+- Best practices
+- API usage examples
+- Configuration guides
+
+## 8. Development Tools
+
+### Prompt: Development CLI
+Design development CLI tools for:
+- Code generation
+- Testing automation
+- Build optimization
+- Deployment management
+- Configuration updates
+- Database migrations
+
+### Prompt: Development Monitoring
+Create development monitoring tools for:
+- Performance profiling
+- Error tracking
+- Resource monitoring
+- Network analysis
+- Database monitoring
+- Cache analysis
+
+## 9. Next Steps
+
+### Prompt: Project Roadmap
+Define project roadmap including:
+- Feature timeline
+- Resource allocation
+- Milestone planning
+- Risk assessment
+- Quality gates
+- Release planning
+
+### Prompt: Risk Management
+Create risk management strategy covering:
+- Technical risks
+- Operational risks
+- Security risks
+- Business risks
+- Mitigation plans
+- Contingency plans
+
+## 10. Final Considerations
+
+### Prompt: Best Practices
+Document best practices for:
+- Code quality
+- Architecture patterns
+- Testing strategies
+- Security measures
+- Performance optimization
+- Maintenance procedures
+
+### Prompt: Future Considerations
+Outline future considerations including:
+- Technology evolution
+- Scalability needs
+- Security updates
+- Feature expansion
+- Platform growth
+- Market adaptation
+
+## 11. Progressive Web App (PWA)
+
+### Prompt: PWA Configuration
+Design a Progressive Web App configuration that includes:
+- Web manifest setup
+- Service worker strategies
+- Offline capabilities
+- Push notifications
+- Background sync
+- Installation experience
+
+Key requirements:
+- Offline-first architecture
+- Performance optimization
+- Cache management
+- Update strategies
+- Cross-platform compatibility
+- Native feature integration
+
+### Prompt: PWA Features
+Implement core PWA features including:
+- App shell architecture
+- Dynamic caching
+- Background processing
+- Periodic sync
+- Share target handling
+- File system access
+
+## 12. Internationalization & Localization
+
+### Prompt: I18n Framework
+Design an internationalization framework that supports:
+- Multiple language handling
+- Right-to-left (RTL) support
+- Number formatting
+- Date/time formatting
+- Currency handling
+- Message formatting
+
+### Prompt: Content Management
+Create a localization content management system with:
+- Translation workflow
+- Content versioning
+- Context preservation
+- Pluralization rules
+- Fallback chains
+- Dynamic loading
+
+## 13. Accessibility Implementation
+
+### Prompt: A11y Standards
+Implement accessibility standards including:
+- WCAG 2.1 compliance
+- ARIA implementation
+- Keyboard navigation
+- Screen reader support
+- Focus management
+- Color contrast
+
+### Prompt: A11y Features
+Develop accessibility features for:
+- Form controls
+- Dynamic content
+- Modal dialogs
+- Custom widgets
+- Error messaging
+- Status updates
+
+## 14. Feature Management
+
+### Prompt: Feature Flags
+Design a feature flag system with:
+- Flag definition
+- Targeting rules
+- A/B testing
+- Gradual rollouts
+- Analytics integration
+- Emergency killswitch
+
+### Prompt: Feature Lifecycle
+Create a feature lifecycle management system:
+- Feature states
+- Dependency management
+- Version control
+- Migration paths
+- Cleanup strategies
+- Usage analytics
+
+## 15. API Management
+
+### Prompt: API Versioning
+Design an API versioning strategy including:
+- Version schemes
+- Compatibility rules
+- Breaking changes
+- Migration support
+- Documentation
+- Client updates
+
+### Prompt: API Gateway
+Implement an API gateway with:
+- Rate limiting
+- Authentication
+- Authorization
+- Request validation
+- Response transformation
+- Cache control
+
+## 16. Security Framework
+
+### Prompt: Authentication System
+Design an authentication system with:
+- Multi-factor authentication
+- Social authentication
+- JWT handling
+- Session management
+- Password policies
+- Account recovery
+
+### Prompt: Authorization Framework
+Create an authorization framework including:
+- Role-based access control
+- Permission management
+- Policy enforcement
+- Audit logging
+- Token validation
+- Access reviews
+
+## 17. Performance Optimization
+
+### Prompt: Frontend Performance
+Implement frontend performance optimizations:
+- Code splitting
+- Tree shaking
+- Asset optimization
+- Lazy loading
+- Route prefetching
+- Runtime optimization
+
+### Prompt: Backend Performance
+Design backend performance improvements:
+- Query optimization
+- Caching strategies
+- Connection pooling
+- Load balancing
+- Resource management
+- Batch processing
+
+## 18. DevOps Integration
+
+### Prompt: CI/CD Pipeline
+Create a comprehensive CI/CD pipeline with:
+- Build automation
+- Test automation
+- Deployment strategies
+- Environment management
+- Secret handling
+- Release automation
+
+### Prompt: Infrastructure as Code
+Design infrastructure as code implementation:
+- Resource templates
+- Environment definitions
+- Scaling rules
+- Network policies
+- Security groups
+- Backup strategies
+
+## 19. Data Management
+
+### Prompt: Data Architecture
+Design a data architecture including:
+- Schema design
+- Migration strategies
+- Backup procedures
+- Archival policies
+- Compliance rules
+- Data lifecycle
+
+### Prompt: Data Processing
+Implement data processing systems:
+- ETL pipelines
+- Stream processing
+- Batch processing
+- Data validation
+- Error handling
+- Recovery procedures
+
+## 20. System Integration
+
+### Prompt: External Integrations
+Design external system integrations:
+- API consumers
+- Third-party services
+- Payment systems
+- Email services
+- Storage services
+- Analytics platforms
+
+### Prompt: Internal Integration
+Create internal system integration patterns:
+- Service discovery
+- Message queuing
+- Event streaming
+- Cache synchronization
+- State replication
+- Circuit breaking
+
+## 21. Disaster Recovery
+
+### Prompt: Backup Systems
+Design backup systems including:
+- Automated backups
+- Point-in-time recovery
+- Cross-region replication
+- Backup verification
+- Restoration testing
+- Data consistency
+
+### Prompt: Recovery Procedures
+Create disaster recovery procedures:
+- Failover processes
+- Data recovery
+- Service restoration
+- Communication plans
+- Testing schedules
+- Documentation requirements
+
+## 22. Compliance and Governance
+
+### Prompt: Compliance Framework
+Implement compliance frameworks for:
+- Data protection
+- Privacy regulations
+- Security standards
+- Industry requirements
+- Audit procedures
+- Documentation maintenance
+
+### Prompt: Governance Model
+Design a governance model including:
+- Policy management
+- Risk assessment
+- Control implementation
+- Compliance monitoring
+- Reporting procedures
+- Review processes
+
+## 23. Machine Learning Integration
+
+### Prompt: ML Pipeline
+Design a machine learning pipeline including:
+- Data preprocessing
+- Model training
+- Model serving
+- Feature engineering
+- Version control
+- Performance monitoring
+
+### Prompt: ML Applications
+Implement machine learning features for:
+- Recommendation systems
+- Content moderation
+- Fraud detection
+- User behavior analysis
+- Predictive analytics
+- Anomaly detection
+
+## 24. Edge Computing
+
+### Prompt: Edge Architecture
+Design an edge computing architecture with:
+- Edge function deployment
+- Data synchronization
+- Offline processing
+- Local storage
+- Network optimization
+- Security measures
+
+### Prompt: Edge Features
+Implement edge computing capabilities:
+- Content delivery
+- Real-time processing
+- Local caching
+- Device synchronization
+- Bandwidth optimization
+- Latency reduction
+
+## 25. WebAssembly Integration
+
+### Prompt: Wasm Architecture
+Design a WebAssembly integration architecture:
+- Module loading
+- Memory management
+- Thread handling
+- Error boundaries
+- Performance profiling
+- Security sandboxing
+
+### Prompt: Wasm Features
+Implement WebAssembly capabilities for:
+- Computation-heavy tasks
+- Media processing
+- Game engines
+- Data encryption
+- File processing
+- Real-time analytics
+
+## 26. Blockchain Integration
+
+### Prompt: Blockchain Architecture
+Design blockchain integration architecture:
+- Smart contract integration
+- Transaction management
+- Wallet connectivity
+- Chain selection
+- Gas optimization
+- Security measures
+
+### Prompt: DApp Features
+Implement decentralized application features:
+- Web3 authentication
+- Token management
+- NFT handling
+- Cross-chain bridges
+- State channels
+- IPFS integration
+
+## 27. Real-Time Collaboration
+
+### Prompt: Collaboration Architecture
+Design real-time collaboration systems:
+- Operational transformation
+- Conflict resolution
+- State synchronization
+- Presence awareness
+- Permission management
+- Version control
+
+### Prompt: Collaboration Features
+Implement collaboration capabilities:
+- Document sharing
+- Live editing
+- Comment threads
+- Change tracking
+- User presence
+- Activity feeds
+
+## 28. Mobile Development
+
+### Prompt: Mobile Architecture
+Design mobile-first architecture:
+- Responsive design
+- Touch optimization
+- Offline support
+- Native integration
+- Performance optimization
+- Battery efficiency
+
+### Prompt: Mobile Features
+Implement mobile-specific features:
+- Gesture controls
+- Device APIs
+- Push notifications
+- Deep linking
+- App state management
+- Platform adaptation
+
+## 29. IoT Integration
+
+### Prompt: IoT Architecture
+Design IoT integration architecture:
+- Device management
+- Data collection
+- Protocol handling
+- Edge processing
+- Security measures
+- Scalability planning
+
+### Prompt: IoT Features
+Implement IoT capabilities:
+- Device provisioning
+- Data streaming
+- Remote management
+- Firmware updates
+- Analytics processing
+- Alert systems
+
+## 30. Developer Experience
+
+### Prompt: DX Tools
+Design developer experience tools:
+- Code generators
+- Documentation tools
+- Debug utilities
+- Testing frameworks
+- Performance analyzers
+- Deployment helpers
+
+### Prompt: DX Features
+Implement developer experience features:
+- Hot reloading
+- Error handling
+- Type checking
+- Code formatting
+- Dependency management
+- Version control
+
+## 31. Quality Assurance
+
+### Prompt: QA Architecture
+Design quality assurance architecture:
+- Test automation
+- Code coverage
+- Performance testing
+- Security scanning
+- Accessibility checking
+- Compliance validation
+
+### Prompt: QA Processes
+Implement quality assurance processes:
+- Continuous testing
+- Regression testing
+- Load testing
+- Penetration testing
+- User acceptance testing
+- Documentation review
+
+## 32. Platform Extensibility
+
+### Prompt: Plugin Architecture
+Design plugin architecture:
+- Module system
+- Extension points
+- API contracts
+- Versioning strategy
+- Security boundaries
+- Performance isolation
+
+### Prompt: Extension Features
+Implement extension capabilities:
+- Plugin discovery
+- Dependency resolution
+- Resource isolation
+- Update management
+- Configuration handling
+- Event propagation
+
+## 33. Local Testing & Focus Group
+
+### Prompt: Local Environment Setup
+Create a local testing environment that includes:
+- Local server configuration
+- Database setup
+- Mock data generation
+- Development tools
+- Monitoring setup
+- Access instructions
+
+Key requirements:
+- Easy to start/stop
+- Minimal dependencies
+- Clear documentation
+- Error handling
+- Resource monitoring
+- Data persistence
+
+### Prompt: Focus Group Testing
+Design a focus group testing framework with:
+- Session management
+- Task scenarios
+- Feedback collection
+- Metrics tracking
+- Report generation
+- Video recording
+
+### Prompt: Quick Start Guide
+Create a quick start guide including:
+- Prerequisites installation
+- Environment setup
+- Test data preparation
+- Running the application
+- Accessing components
+- Troubleshooting steps
+
+### Prompt: Testing Scenarios
+Develop testing scenarios for:
+- User onboarding
+- Core features
+- Advanced features
+- Error cases
+- Performance testing
+- User feedback
+
+### Prompt: Data Collection
+Implement data collection for:
+- User interactions
+- Performance metrics
+- Error logs
+- User feedback
+- Session recordings
+- System metrics
+
+### Prompt: Results Analysis
+Create analysis tools for:
+- Metrics aggregation
+- Feedback processing
+- Performance analysis
+- Error pattern detection
+- User behavior analysis
+- Report generation
+
+## Local Testing Checklist
+
+1. Environment Setup
+   - [ ] Install Node.js and npm
+   - [ ] Install SQLite or PostgreSQL
+   - [ ] Clone repository
+   - [ ] Install dependencies
+   - [ ] Configure environment variables
+
+2. Database Setup
+   - [ ] Initialize database
+   - [ ] Run migrations
+   - [ ] Generate mock data
+   - [ ] Verify data integrity
+   - [ ] Setup backup
+
+3. Server Configuration
+   - [ ] Configure ports
+   - [ ] Setup CORS
+   - [ ] Enable logging
+   - [ ] Configure websockets
+   - [ ] Setup monitoring
+
+4. Focus Group Preparation
+   - [ ] Prepare testing scenarios
+   - [ ] Setup recording tools
+   - [ ] Configure metrics collection
+   - [ ] Prepare feedback forms
+   - [ ] Test all components
+
+5. Session Execution
+   - [ ] Brief participants
+   - [ ] Start recording
+   - [ ] Monitor progress
+   - [ ] Collect feedback
+   - [ ] Save session data
+
+6. Results Processing
+   - [ ] Aggregate metrics
+   - [ ] Process feedback
+   - [ ] Generate reports
+   - [ ] Archive session data
+   - [ ] Share results
+
+## Quick Commands
+
+```bash
+# Start local environment
+npm run local
+
+# Generate mock data
+npm run mock:generate
+
+# Start focus group session
+npm run focus-group:start
+
+# Collect feedback
+npm run focus-group:feedback
+
+# Generate report
+npm run focus-group:report
+
+# Stop all services
+npm run local:stop
+```
+
+## Common Issues
+
+1. Database Connection
+   - Check database service is running
+   - Verify connection string
+   - Confirm port availability
+   - Check permissions
+
+2. Server Startup
+   - Verify port availability
+   - Check dependencies
+   - Confirm environment variables
+   - Review logs
+
+3. Recording Issues
+   - Check storage space
+   - Verify permissions
+   - Test audio/video devices
+   - Confirm format support
+
+4. Data Collection
+   - Verify metrics logging
+   - Check storage paths
+   - Confirm API endpoints
+   - Test backup system
+
+## Focus Group Guidelines
+
+1. Session Preparation
+   - Review scenarios
+   - Test all features
+   - Prepare backup plans
+   - Setup recording
+   - Brief moderators
+
+2. During Session
+   - Monitor progress
+   - Take notes
+   - Watch for issues
+   - Support participants
+   - Track timing
+
+3. Post Session
+   - Save all data
+   - Collect feedback
+   - Generate reports
+   - Archive recordings
+   - Document issues
+
+4. Analysis
+   - Review metrics
+   - Process feedback
+   - Identify patterns
+   - Document findings
+   - Prepare recommendations
+
+This completes the local testing and focus group setup guide. Follow these instructions to prepare and execute successful testing sessions for the SuperApp and Gamifier system.
+
+This completes the extended implementation guide with additional sections covering emerging technologies and modern development practices. Each section is designed to be modular and can be implemented independently while maintaining integration capabilities with the core system.
+
+## Local Testing Environment and Focus Group Testing
+
+### Local Environment Setup
+1. Create a comprehensive local development environment configuration that includes:
+   - Server setup (ports, CORS, middleware)
+   - Database configuration (SQLite, logging, synchronization)
+   - Storage management (uploads, assets, temporary files)
+   - Feature toggles (mock data, monitoring, testing)
+
+2. Implement a robust mock data generation system:
+   - User profiles with varying levels of completion
+   - Content items across different categories
+   - Interaction history and engagement metrics
+   - Realistic timestamps and relationships
+
+3. Develop monitoring and metrics collection:
+   - Performance metrics (response times, resource usage)
+   - User interaction tracking
+   - Error logging and analysis
+   - Real-time monitoring dashboard
+
+### Focus Group Testing
+1. Design comprehensive testing scenarios:
+   - Onboarding flow (registration, profile setup, tutorial)
+   - Core feature usage (content interaction, social features)
+   - Advanced feature exploration (customization, integration)
+   - Error handling and edge cases
+
+2. Create feedback collection mechanisms:
+   - In-app surveys and feedback forms
+   - Post-session interviews
+   - Usability scoring
+   - Feature-specific feedback
+
+3. Implement metrics tracking:
+   - User engagement metrics
+   - Task completion rates
+   - Error frequency and patterns
+   - Performance benchmarks
+
+### Testing Infrastructure
+1. Set up recording and monitoring tools:
+   - Screen recording capability
+   - User interaction tracking
+   - Performance monitoring
+   - Error logging
+
+2. Create analysis and reporting tools:
+   - Metrics aggregation
+   - Feedback analysis
+   - Report generation
+   - Trend identification
+
+3. Implement session management:
+   - Participant tracking
+   - Session scheduling
+   - Resource allocation
+   - Data collection
+
+### Documentation Requirements
+1. Create user guides:
+   - Environment setup instructions
+   - Testing scenario documentation
+   - Feedback collection guidelines
+   - Troubleshooting guides
+
+2. Develop technical documentation:
+   - Architecture overview
+   - API documentation
+   - Database schema
+   - Integration points
+
+3. Prepare testing documentation:
+   - Test case specifications
+   - Scenario descriptions
+   - Expected outcomes
+   - Success criteria
+
+### Quality Assurance
+1. Implement validation mechanisms:
+   - Data integrity checks
+   - Performance benchmarks
+   - Security validation
+   - Compliance verification
+
+2. Create monitoring systems:
+   - Real-time performance monitoring
+   - Error tracking
+   - Usage analytics
+   - Resource utilization
+
+3. Develop reporting tools:
+   - Automated report generation
+   - Custom metric calculations
+   - Trend analysis
+   - Recommendation engine
+
+### Security Considerations
+1. Implement security measures:
+   - Authentication mechanisms
+   - Authorization controls
+   - Data encryption
+   - Privacy protection
+
+2. Create audit trails:
+   - User activity logging
+   - System event tracking
+   - Security incident recording
+   - Compliance monitoring
+
+3. Develop security testing:
+   - Penetration testing
+   - Vulnerability assessment
+   - Security audit
+   - Compliance verification
+
+### Performance Optimization
+1. Implement optimization strategies:
+   - Response time improvement
+   - Resource usage optimization
+   - Network efficiency
+   - Cache management
+
+2. Create performance monitoring:
+   - Real-time metrics
+   - Performance benchmarks
+   - Resource utilization
+   - Bottleneck identification
+
+3. Develop optimization tools:
+   - Performance profiling
+   - Load testing
+   - Stress testing
+   - Optimization recommendations
+
+### Maintenance and Support
+1. Create maintenance procedures:
+   - Regular updates
+   - Database maintenance
+   - System cleanup
+   - Performance tuning
+
+2. Implement support systems:
+   - Issue tracking
+   - User support
+   - Documentation updates
+   - Knowledge base
+
+3. Develop monitoring tools:
+   - System health checks
+   - Performance monitoring
+   - Error tracking
+   - Usage analytics
+
+### Future Considerations
+1. Plan for scalability:
+   - Infrastructure expansion
+   - Feature additions
+   - Performance improvements
+   - Capacity planning
+
+2. Consider integration possibilities:
+   - Third-party services
+   - Additional platforms
+   - New features
+   - Enhanced capabilities
+
+3. Prepare for evolution:
+   - Technology updates
+   - Security enhancements
+   - Feature improvements
+   - User experience optimization

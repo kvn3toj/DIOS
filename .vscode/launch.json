@@ -1,0 +1,63 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Social Service",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/backend/social/src/main.ts",
+      "preLaunchTask": "tsc: build - backend/social/tsconfig.json",
+      "outFiles": ["${workspaceFolder}/backend/social/dist/**/*.js"],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Analytics Service",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/backend/analytics/src/main.ts",
+      "preLaunchTask": "tsc: build - backend/analytics/tsconfig.json",
+      "outFiles": ["${workspaceFolder}/backend/analytics/dist/**/*.js"],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Gamification Service",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/backend/gamification/src/main.ts",
+      "preLaunchTask": "tsc: build - backend/gamification/tsconfig.json",
+      "outFiles": ["${workspaceFolder}/backend/gamification/dist/**/*.js"],
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Tests",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": ["--runInBand"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Debug Frontend",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/frontend"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Debug All Services",
+      "configurations": ["Debug Social Service", "Debug Analytics Service", "Debug Gamification Service"]
+    }
+  ]
+} 

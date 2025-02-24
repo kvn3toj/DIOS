@@ -1,0 +1,64 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id              String           @id @default(uuid())
+  email           String          @unique
+  name            String?
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+  analyticsEvents AnalyticsEvent[]
+  auditLogs       AuditLog[]
+  transactions    Transaction[]
+}
+
+model AnalyticsEvent {
+  id        String   @id @default(uuid())
+  type      String
+  data      Json
+  timestamp DateTime @default(now())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+}
+
+model ErrorLog {
+  id        String   @id @default(uuid())
+  message   String
+  stack     String?
+  level     String
+  timestamp DateTime @default(now())
+  metadata  Json?
+}
+
+model AuditLog {
+  id        String   @id @default(uuid())
+  action    String
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+  details   Json?
+  timestamp DateTime @default(now())
+}
+
+model Transaction {
+  id        String   @id @default(uuid())
+  type      String
+  amount    Float
+  status    String
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+  timestamp DateTime @default(now())
+}
+
+model Metric {
+  id        String   @id @default(uuid())
+  name      String
+  value     Float
+  tags      Json?
+  timestamp DateTime @default(now())
+} 

@@ -1,0 +1,14 @@
+{
+  "watch": [
+    "backend/analytics/src/**/*.ts",
+    "backend/analytics/src/**/*.json"
+  ],
+  "ignore": [
+    "**/*.test.ts",
+    "**/*.spec.ts",
+    ".git",
+    "node_modules"
+  ],
+  "exec": "ts-node ./backend/analytics/src/main.ts",
+  "ext": "ts,json"
+} 

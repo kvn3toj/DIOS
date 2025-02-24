@@ -1,0 +1,4 @@
+2025-02-23T09:03:50.633048Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("U\u{308}Market/.DS_Store"), AnchoredSystemPathBuf("U\u{308}Market/Flujos_UMarket_Consumidor/.DS_Store")}
+2025-02-23T09:03:50.635219Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-02-23T09:03:50.713805Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/daemon/ffbfbc9cbba5100c-turbo.log.2025-02-23"), AnchoredSystemPathBuf(".turbo/daemon/ffbfbc9cbba5100c-turbo.log.2025-02-22")}
+2025-02-23T09:03:50.713815Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))

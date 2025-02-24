@@ -1,0 +1,47 @@
+@layer base {
+  .high-contrast {
+    --background: #000000;
+    --foreground: #ffffff;
+    --primary: #ffff00;
+    --secondary: #00ffff;
+    --accent: #ff00ff;
+    --error: #ff0000;
+    --success: #00ff00;
+    --warning: #ffa500;
+  }
+
+  .high-contrast {
+    @apply bg-[var(--background)] text-[var(--foreground)];
+  }
+
+  .high-contrast a {
+    @apply text-[var(--primary)] underline;
+  }
+
+  .high-contrast button {
+    @apply border-2 border-[var(--foreground)] bg-[var(--background)] text-[var(--foreground)];
+  }
+
+  .high-contrast button:focus,
+  .high-contrast a:focus,
+  .high-contrast input:focus,
+  .high-contrast select:focus,
+  .high-contrast textarea:focus {
+    @apply outline-none ring-2 ring-[var(--primary)] ring-offset-2 ring-offset-[var(--background)];
+  }
+
+  .high-contrast input,
+  .high-contrast select,
+  .high-contrast textarea {
+    @apply border-2 border-[var(--foreground)] bg-[var(--background)] text-[var(--foreground)];
+  }
+
+  .high-contrast [aria-invalid="true"] {
+    @apply border-[var(--error)];
+  }
+
+  .high-contrast [aria-disabled="true"],
+  .high-contrast :disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+} 
